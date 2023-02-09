@@ -1,0 +1,40 @@
+#include<stdio.h>
+void sum(int a,int b)//function declaration
+{
+   int total;//function definition
+   total=a+b;
+   printf("The Sum is %d\n",total);
+}
+void diff(int a,int b)
+{
+    int sub;
+    sub=a-b;
+    printf("The diff is %d\n",sub);
+    
+}
+void mul(int a,int b)
+{
+    int m;
+    m=a*b;
+    printf("The multi  %d\n",m);
+}
+void  divi(int a,int b)
+{
+    float d;
+    d=a/b;
+    printf("The divi is %f",d);
+}
+int main()
+{
+    int a,b;
+    printf("Enter the Two Numbers\n");
+    printf("Enter the first Number:\n");
+    scanf("%d",&a);
+    printf("Enter the second  Number:\n");
+    scanf("%d",&b);
+    sum(a,b);//calling a function
+    diff(a,b);
+    mul(a,b);
+    divi(a,b);
+    return 0;
+}
